@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>!
+	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>!
+	<body>
 		<div class="main">	
 			<div class="main-overlay"></div>
 			<div class="wrapper">
@@ -33,7 +33,7 @@
 			<p>Верстка на HTML и СSS<br> Разработка сайта под ключ</p>
 			</div>
 			</div>
-			<a class="main-down" href="#"><i class="icon-down"></i></a>
+			<a class="main-down .slowly" href="#"><i class="icon-down"></i></a>
 			
 		</div>
 	<div class="portfolio">
@@ -108,6 +108,17 @@
     			var work = $(this).attr('data-work');
     			var modal = $('.modal');
     			modal.find('.modal-body').load(work+'.html');
+    		});
+    	});
+    </script>
+		<script>
+    	$(document).ready(function() {
+    		$(".slowly").on("click", function(event){
+    			event.preventDefault();
+    			var id = $(this).attr('href'),
+    			top = $(id).offset().top;
+    			$('body,html').animate ({scrollTop: top}, 800);
+
     		});
     	});
     </script>
