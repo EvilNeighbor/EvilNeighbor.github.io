@@ -1,0 +1,235 @@
+/* Здесь будут храниться стили нашего сайта */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto';
+}
+header {
+  padding-top: 60px;
+  background-color: #3a7dfd;
+  padding-bottom: 22px;
+  color: #fff;
+}
+header .header-pretitle {
+  font-size: 18px;
+  padding-top: 60px;
+}
+header .header-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-top: 30px;
+}
+header .header-subtitle {
+  font-size: 18px;
+  margin-top: 20px;
+}
+header .header-btn {
+  /* Style for "Прямоуголь" */
+  box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #072b6f;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header .header-btn:hover {
+  box-shadow: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .header-btn-box {
+  max-width: 210px;
+}
+header small {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+.portfolio {
+  background-color: #dddddd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.portfolio-box {
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+.portfolio-box_title {
+  color: #072b6f;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+}
+.portfolio-box_subtitle {
+  color: #7bb9ff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.portfolio-col-1 {
+  padding-left: 70px;
+}
+.portfolio-col-1 h3 {
+  color: #072b6f;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.portfolio-col-1 p {
+  color: #8f8f8f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.portfolio-col-1 a {
+  color: #072b6f;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.portfolio-col-2 {
+  padding-right: 60px;
+}
+.portfolio-col-2 h3 {
+  color: #072b6f;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.portfolio-col-2 p {
+  color: #8f8f8f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.portfolio-col-2 a {
+  color: #072b6f;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+footer {
+  background-color: #3a7dfd;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+footer h4 {
+  color: #fefefe;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+}
+footer .social-block {
+  text-align: center;
+}
+footer .social-block a {
+  margin-right: 15px;
+}
+footer .social-block a:hover {
+  box-shadow: 0px 0px 26px 3px rgba(252, 252, 252, 0.2);
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+footer p {
+  color: #deedfe;
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footer-btn {
+  background-color: transparent;
+  padding: 10px 35px;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+footer .footer-btn:hover {
+  box-shadow: 0px 0px 26px 3px rgba(252, 252, 252, 0.2);
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@media (max-width: 1200px) {
+  .header-pretitle {
+    padding-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  .header-img {
+    display: none;
+  }
+  .header-pretitle {
+    padding-top: 0 !important;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
+  footer h4 {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .social-block img {
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+  }
+  .footer-btn {
+    padding: 5px 25px !important;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-col-1,
+  .portfolio-col-2 {
+    text-align: center;
+    padding: 0 !important;
+  }
+  .portfolio-col-1 p,
+  .portfolio-col-2 p {
+    padding: 0 5px;
+  }
+  .portfolio-col-1 img,
+  .portfolio-col-2 img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .social-block p {
+    margin-bottom: 5px;
+  }
+  footer .social-block img {
+    margin-right: 0;
+  }
+  footer .max-w {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
