@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Our style css -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Hello, world!</title>
@@ -18,12 +19,12 @@
     
 
     <header>
-      <div class="container">
+      <div class="container wow zoomIn">
         <div class="row">
           <div class="col-lg-7"><img src="img/main-bg.png" class="img-fluid header-img" alt="Гланая картинка"></div>
             <!-- /.col-7 -->
           <div class="col-lg-5">
-            <p class="header-pretitle">Веб-разработчик</p>
+            <p class="header-pretitle ">Веб-разработчик</p>
             <h1 class="header-title">Денис Сычевский</h1>
             <p class="header-subtitle">Верстка на HTML/CSS <br>
             Разработка сайтов под ключ</p>
@@ -70,7 +71,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 wow fadeInLeft">
             <h4>Денис Сычевский</h4>
             <p>Разработка сайтов под ключ</p>
           </div>
@@ -78,15 +79,15 @@
           <div class="col-md-4">
             <div class="social-block">
               <p>Подпишитесь</p>
-              <a href=""><img src="img/soc-links/facebook-logo-button.png"  alt=""></a>
-              <a href=""><img src="img/soc-links/vk-social-logotype.png"  alt=""></a>
-              <a href=""><img src="img/soc-links/telegram-symbol.png"  alt=""></a>
-              <a href=""><img src="img/soc-links/youtube-symbol.png"  alt=""></a>
+              <a href=""><img src="img/soc-links/facebook-logo-button.png" class="wow fadeInLeft"  alt=""></a>
+              <a href=""><img src="img/soc-links/vk-social-logotype.png" class="wow fadeInDown"  alt=""></a>
+              <a href=""><img src="img/soc-links/telegram-symbol.png" class="wow fadeInUp"  alt=""></a>
+              <a href=""><img src="img/soc-links/youtube-symbol.png" class="wow fadeInRight"  alt=""></a>
             </div>
 
           </div>
           <!-- /.col-4 -->
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center wow fadeInRight">
             <p class="max-w">Напишите мне</p>
             <button class="footer-btn">Написать</button>
           </div>
@@ -96,6 +97,10 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap  JS -->
